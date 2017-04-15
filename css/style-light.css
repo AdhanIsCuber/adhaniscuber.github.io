@@ -5,49 +5,49 @@
   font-weight: normal;
   font-style: normal;
 }
+/* =======================================================
+*
+* 	Template Style
+*	Edit this section
+*
+* ======================================================= */
 html {
-  background: #222222;
+  background-color: #eeeeee;
 }
 
 body {
   font-family: "Work Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 34px;
-  background: #222222;
+  background: #eeeeee;
   font-weight: 300;
   opacity: 0;
   color: #222;
 }
 
 a {
-  color: #ffab00;
+  color: #000;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
-a:active, a:focus, a:hover {
-  color: #fff;
+a:hover, a:active, a:focus {
+  color: #000;
   outline: none;
   text-decoration: none;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid black;
 }
 
-figure,
-p {
+p, figure {
   margin-bottom: 1.5em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #fff;
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
-  margin: 1.5em 0;
+  margin: 1.5em 0 1.5em 0;
 }
 
 ::-webkit-selection {
@@ -67,9 +67,6 @@ h6 {
 
 #adhaniscuber-page {
   overflow: hidden;
-}
-#adhaniscuber-page .about {
-  height: 100px !important;
 }
 
 .btn {
@@ -94,7 +91,7 @@ h6 {
 .btn.btn-lg {
   padding: 18px 36px !important;
 }
-.btn:active, .btn:focus, .btn:hover {
+.btn:hover, .btn:active, .btn:focus {
   box-shadow: none !important;
   outline: none !important;
 }
@@ -104,7 +101,7 @@ h6 {
   color: #fff;
   border: 2px solid #ffab00;
 }
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #ffb31a !important;
   border-color: #ffb31a !important;
 }
@@ -113,7 +110,7 @@ h6 {
   color: #ffab00;
   border: 2px solid #ffab00;
 }
-.btn-primary.btn-outline:active, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:hover {
+.btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
   background: #ffab00;
   color: #fff;
 }
@@ -123,7 +120,7 @@ h6 {
   color: #fff;
   border: 2px solid #5cb85c;
 }
-.btn-success:active, .btn-success:focus, .btn-success:hover {
+.btn-success:hover, .btn-success:focus, .btn-success:active {
   background: #4cae4c !important;
   border-color: #4cae4c !important;
 }
@@ -132,7 +129,7 @@ h6 {
   color: #5cb85c;
   border: 2px solid #5cb85c;
 }
-.btn-success.btn-outline:active, .btn-success.btn-outline:focus, .btn-success.btn-outline:hover {
+.btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
   background: #5cb85c;
   color: #fff;
 }
@@ -142,7 +139,7 @@ h6 {
   color: #fff;
   border: 2px solid #5bc0de;
 }
-.btn-info:active, .btn-info:focus, .btn-info:hover {
+.btn-info:hover, .btn-info:focus, .btn-info:active {
   background: #46b8da !important;
   border-color: #46b8da !important;
 }
@@ -151,7 +148,7 @@ h6 {
   color: #5bc0de;
   border: 2px solid #5bc0de;
 }
-.btn-info.btn-outline:active, .btn-info.btn-outline:focus, .btn-info.btn-outline:hover {
+.btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
   background: #5bc0de;
   color: #fff;
 }
@@ -161,7 +158,7 @@ h6 {
   color: #fff;
   border: 2px solid #f0ad4e;
 }
-.btn-warning:active, .btn-warning:focus, .btn-warning:hover {
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active {
   background: #eea236 !important;
   border-color: #eea236 !important;
 }
@@ -170,7 +167,7 @@ h6 {
   color: #f0ad4e;
   border: 2px solid #f0ad4e;
 }
-.btn-warning.btn-outline:active, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:hover {
+.btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active {
   background: #f0ad4e;
   color: #fff;
 }
@@ -180,7 +177,7 @@ h6 {
   color: #fff;
   border: 2px solid #d9534f;
 }
-.btn-danger:active, .btn-danger:focus, .btn-danger:hover {
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
   background: #d43f3a !important;
   border-color: #d43f3a !important;
 }
@@ -189,28 +186,28 @@ h6 {
   color: #d9534f;
   border: 2px solid #d9534f;
 }
-.btn-danger.btn-outline:active, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:hover {
+.btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
   background: #d9534f;
   color: #fff;
 }
 
 .btn-light {
-  background: #fff;
-  color: #fff;
-  border: 2px solid #fff;
+  background: #000;
+  color: #000;
+  border: 2px solid #000;
 }
-.btn-light:active, .btn-light:focus, .btn-light:hover {
-  background: #fff;
-  border-color: #fff;
+.btn-light:hover, .btn-light:focus, .btn-light:active {
+  background: #000;
+  border-color: #000;
 }
 .btn-light.btn-outline {
   background: transparent;
-  color: #fff;
-  border: 2px solid #fff;
-}
-.btn-light.btn-outline:active, .btn-light.btn-outline:focus, .btn-light.btn-outline:hover {
-  background: #fff;
   color: #000;
+  border: 2px solid #000;
+}
+.btn-light.btn-outline:hover, .btn-light.btn-outline:focus, .btn-light.btn-outline:active {
+  background: #000;
+  color: #fff;
 }
 
 .btn-outline {
@@ -221,7 +218,7 @@ h6 {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-.btn-outline:active, .btn-outline:focus, .btn-outline:hover {
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active {
   box-shadow: none;
 }
 
@@ -245,8 +242,8 @@ h6 {
   *display: inline;
 }
 #adhaniscuber-nav ul li a {
-  color: rgba(255, 255, 255, 0.5);
-  padding: 20px 0 5px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0 5px 0px;
   margin-left: 10px;
   margin-right: 10px;
   border-bottom: transparent 2px solid;
@@ -258,13 +255,13 @@ h6 {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-#adhaniscuber-nav ul li a:active, #adhaniscuber-nav ul li a:focus, #adhaniscuber-nav ul li a:hover {
-  color: white;
-  border-bottom: white 2px solid;
+#adhaniscuber-nav ul li a:hover, #adhaniscuber-nav ul li a:focus, #adhaniscuber-nav ul li a:active {
+  color: black;
+  border-bottom: black 2px solid;
 }
 #adhaniscuber-nav ul li.adhaniscuber-active a {
-  color: white;
-  border-bottom: rgba(255, 255, 255, 0.1) 2px solid;
+  color: black;
+  border-bottom: rgba(0, 0, 0, 0.1) 2px solid;
 }
 
 #adhaniscuber-header {
@@ -312,7 +309,7 @@ h6 {
   letter-spacing: 15px;
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #000;
   font-family: "Sacramento", cursive;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -357,7 +354,7 @@ h6 {
   font-size: 24px;
   line-height: 34px;
   font-style: italic;
-  letter-spacing: 0.09em;
+  letter-spacing: .09em;
 }
 @media screen and (max-width: 480px) {
   #adhaniscuber-header h2 {
@@ -387,7 +384,7 @@ h6 {
 }
 .btn-next a span {
   display: block;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: 300;
@@ -400,7 +397,7 @@ h6 {
   -o-transition: 0.5s;
   transition: 0.5s;
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.4);
   color: #ffab00;
 }
 @media screen and (max-width: 480px) {
@@ -409,10 +406,10 @@ h6 {
   }
 }
 .btn-next a:hover {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 .btn-next a:hover span {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 .btn-next a:hover i {
   color: #ffab00;
@@ -448,7 +445,7 @@ h6 {
   right: 0;
   left: 0;
   height: 2px;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(0, 0, 0, 0.03);
   width: 101%;
   -webkit-transform: skewY(-7deg);
   -moz-transform: skewY(-7deg);
@@ -611,24 +608,24 @@ h6 {
   padding-top: 3em;
 }
 .adhaniscuber-project .adhaniscuber-text h2 {
-  color: white;
+  color: black;
   margin-bottom: 20px;
 }
 .adhaniscuber-project .adhaniscuber-text p {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 .adhaniscuber-project .adhaniscuber-text .profile p {
   margin-bottom: 0.1em !important;
 }
 .adhaniscuber-project .adhaniscuber-text .profile h4 {
-  margin: 0 0 0.2em !important;
+  margin: 0 0 0.2em 0 !important;
 }
 
 #adhaniscuber-main,
 .adhaniscuber-section {
   padding: 7em 0;
   position: relative;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 #adhaniscuber-main small,
 .adhaniscuber-section small {
@@ -638,7 +635,7 @@ h6 {
 .adhaniscuber-section .adhaniscuber-lead {
   font-size: 26px;
   line-height: 38px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 @media screen and (max-width: 768px) {
   #adhaniscuber-main .adhaniscuber-lead,
@@ -649,8 +646,8 @@ h6 {
 }
 
 #adhaniscuber-footer {
-  padding: 7em 0;
-  color: rgba(255, 255, 255, 0.2);
+  padding: 7em 0em;
+  color: rgba(0, 0, 0, 0.3);
   position: relative;
 }
 #adhaniscuber-footer:before {
@@ -660,7 +657,7 @@ h6 {
   right: 0;
   left: 0;
   height: 1px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   width: 101%;
   -webkit-transform: skewY(-7deg);
   -moz-transform: skewY(-7deg);
@@ -672,7 +669,7 @@ h6 {
 .adhaniscuber-project-detail {
   padding: 7em 0;
   position: relative;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 .adhaniscuber-project-detail:before {
   content: "";
@@ -681,7 +678,7 @@ h6 {
   right: 0;
   left: 0;
   height: 1px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   width: 101%;
   -webkit-transform: skewY(-7deg);
   -moz-transform: skewY(-7deg);
@@ -691,14 +688,14 @@ h6 {
 }
 
 .adhaniscuber-section-heading {
-  margin-top: 0;
+  margin-top: 0px;
   line-height: 38px;
   font-size: 13px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 .adhaniscuber-section-heading .adhaniscuber-number {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(0, 0, 0, 0.2);
   padding-bottom: 2px;
   margin-right: 10px;
   display: -moz-inline-stack;
@@ -721,13 +718,13 @@ h6 {
   font-size: 20px;
   line-height: 38px;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 .adhaniscuber-testimony .adhaniscuber-quote {
   margin-bottom: 10px;
 }
 .adhaniscuber-testimony p cite {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .adhaniscuber-social {
@@ -746,7 +743,7 @@ h6 {
 .adhaniscuber-social li a {
   padding: 10px;
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   border-bottom: none;
   display: -moz-inline-stack;
   display: inline-block;
@@ -757,7 +754,7 @@ h6 {
   transition: 0.5s;
 }
 .adhaniscuber-social li a:hover {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 .adhaniscuber-social.adhaniscuber-stack li {
   display: block;
@@ -790,7 +787,7 @@ h6 {
 
 .adhaniscuber-list-style-1 {
   padding: 0;
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5em 0;
 }
 .adhaniscuber-list-style-1.adhaniscuber-inline {
   float: left;
@@ -798,7 +795,7 @@ h6 {
 }
 @media screen and (max-width: 480px) {
   .adhaniscuber-list-style-1.adhaniscuber-inline {
-    margin-right: 0;
+    margin-right: 0px;
     float: none;
   }
 }
@@ -810,7 +807,7 @@ h6 {
 .adhaniscuber-list-style-1 li:before {
   content: "";
   left: 0;
-  top: 0.75em;
+  top: .75em;
   position: absolute;
   width: 7px;
   height: 7px;
@@ -818,8 +815,7 @@ h6 {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
-  background: #ffab00;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .flexslider {
@@ -836,7 +832,7 @@ h6 {
   border-radius: 7px;
 }
 .flexslider .flex-control-paging li a {
-  background: white;
+  background: black;
   box-shadow: none !important;
 }
 .flexslider .flex-control-nav {
@@ -848,7 +844,7 @@ h6 {
   z-index: 999;
   top: 25px;
   right: 15px;
-  background: black;
+  background: #cccccc;
   width: 40px;
   height: 20px;
   border-bottom: none !important;
@@ -871,11 +867,11 @@ h6 {
   -o-transition: 0.5s;
   transition: 0.5s;
   background: white;
-  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.49);
-  -moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.49);
-  -ms-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.49);
-  -o-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.49);
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.49);
+  -webkit-box-shadow: 0px 0 10px 0px rgba(0, 0, 0, 0.99);
+  -moz-box-shadow: 0px 0 10px 0px rgba(0, 0, 0, 0.99);
+  -ms-box-shadow: 0px 0 10px 0px rgba(0, 0, 0, 0.99);
+  -o-box-shadow: 0px 0 10px 0px rgba(0, 0, 0, 0.99);
+  box-shadow: 0px 0 10px 0px rgba(0, 0, 0, 0.99);
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
@@ -891,11 +887,11 @@ h6 {
   -o-transition: 0.5s;
   transition: 0.5s;
   background: white;
-  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.49);
-  -moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.49);
-  -ms-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.49);
-  -o-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.49);
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.49);
+  -webkit-box-shadow: 0px 0 2px 0px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 0px 0 2px 0px rgba(0, 0, 0, 0.49);
+  -ms-box-shadow: 0px 0 2px 0px rgba(0, 0, 0, 0.49);
+  -o-box-shadow: 0px 0 2px 0px rgba(0, 0, 0, 0.49);
+  box-shadow: 0px 0 2px 0px rgba(0, 0, 0, 0.49);
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
@@ -989,16 +985,16 @@ h6 {
 
 .adhaniscuber-loader {
   position: fixed;
-  left: 0;
-  top: 0;
+  left: 0px;
+  top: 0px;
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url("../images/hourglass.svg") center no-repeat #222222;
+  background: url(../images/hourglass.svg) center no-repeat #EEEEEE;
 }
 
 .js .animate-box {
   opacity: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style-light.css.map */
