@@ -1,7 +1,6 @@
 $font-primary: 'Work Sans', Arial, sans-serif;
 $font-secondary: 'Playfair Display', Times, serif;
-$font-handwriting: 'Sacramento', cursive;
-// Overrides
+$font-handwriting: 'Sacramento', cursive; // Overrides
 $grid-gutter-width: 40px !default;
 $border-radius-base: 4px !default;
 $padding-base-vertical: 14px !default;
@@ -18,8 +17,7 @@ $brand-selection-color: $brand-primary;
 $brand-overlay-color: #3b3d40;
 $brand-bg-color: #efefef;
 $input-border-focus: $brand-primary !default;
-$form-group-margin-bottom: 30px !default;
-// Mixin
+$form-group-margin-bottom: 30px !default; // Mixin
 @mixin adhaniscuber-translate($translatex) {
 	-moz-transform: translateX($translatex);
 	-webkit-transform: translateX($translatex);
@@ -150,6 +148,7 @@ h6 {
 
 #adhaniscuber-page {
 	overflow: hidden;
+
 	.about {
 		height: 100px !important;
 	}
@@ -395,8 +394,6 @@ h6 {
 	}
 }
 
-
-
 #adhaniscuber-header {
 	height: 100vh;
 	width: 100vw;
@@ -608,10 +605,11 @@ h6 {
 
 		.adhaniscuber-progress {
 			.progress-bar-description {
-				h4{
-					margin: 1.5em 0 .5em 0;
+				h4 {
+					margin: 1.5em 0 0.5em;
 				}
 			}
+
 			.custom-progress {
 				height: 14px;
 				margin: 10px 50px;
@@ -620,12 +618,14 @@ h6 {
 				border-radius: 7px;
 				box-shadow: none;
 				border: 1px solid #bbb;
+
 				.custom-progress-bar {
 					height: 10px;
 					box-shadow: none;
 					margin: 1px;
 					border-radius: 5px;
 				}
+
 				.custom-progress-color {
 					background-color: #ffab00;
 				}
@@ -792,6 +792,12 @@ h6 {
 	position: relative;
 	color: rgba(255,255,255,.3);
 
+	h1 {
+		text-align: center;
+		font-size: 3.5em;
+		font-family: $font-secondary;
+	}
+
 	&:before {
 		content: "";
 		position: absolute;
@@ -807,6 +813,238 @@ h6 {
 		-o-transform: skewY(-7deg);
 		transform: skewY(-7deg);
 	}
+
+	.latest,  .oldest {
+		text-align: center !important;
+		text-transform: uppercase;
+		font-size: 14px;
+		display: block;
+		color: #333333;
+
+		span {
+			background: #F7F7F7;
+			font-weight:500;
+			letter-spacing:3px;
+		}
+	}
+
+	.oldest {
+		margin-top: 0px;
+		margin-bottom: 40px;
+		span {
+			padding: 5px 10px 5px 10px;
+			border-top: 2px solid #ffab00;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+	}
+.timeline-container {
+	position: relative;
+	padding-bottom: 40px;
+	overflow: hidden;
+
+	&:before {
+		position: absolute;
+		content: "";
+		top: -40px;
+		left: 49.95%;
+		height: 800em;
+		z-index: -1;
+		width: 2px;
+		background: rgba(255, 255, 255, 0.5);
+	}
+	.latest {
+		margin-top: 0;
+		margin-bottom: 40px;
+		span{
+			padding: 5px 10px 5px 10px;
+			border-bottom: 2px solid #ffab00;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+	}
+}
+
+.timeline-container .group-item{
+	position: relative;
+	margin-bottom: 20px;
+}
+.timeline-container .group-item h3.group-title {
+	font-size: 20px;
+	margin-bottom: 5px;
+	margin: 0;
+}
+.timeline-container .group-item span.group-sub-title{
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.timeline-container .group-item p {
+	padding-top: 15px;
+	font-weight: 100;
+	font-size: 18px;
+}
+
+
+/*Right Group*/
+.timeline-container .group-right span.group-date {
+	display: inline-block;
+	padding: 8px 16px;
+	float: left;
+	left: 30%;
+	top: 30px;
+	color: rgba(255, 255, 255, 0.5);
+	border-right: 2px solid #ffab00;
+	position: relative;
+	text-transform: uppercase;
+	border-top-left-radius: 10px;
+	text-transform: uppercase;
+	border-bottom-left-radius: 10px;
+}
+
+.timeline-container .group-right span.group-date-fix {
+  display: inline-block;
+	padding: 8px 16px;
+	float: left;
+	left: 33.55%;
+	top: 30px;
+	color: rgba(255, 255, 255, 0.5);
+	border-right: 2px solid #ffab00;
+	position: relative;
+	text-transform: uppercase;
+	border-top-left-radius: 10px;
+	text-transform: uppercase;
+	border-bottom-left-radius: 10px;
+}
+
+.group-right:hover span.group-date, .group-right:hover h3.group-title {
+	color: #ffab00;
+	border-color:#ffab00;
+}
+.group-left:hover h3.group-title, div.group-left:hover span.group-date {
+	color: #ffab00;
+	border-color:#ffab00;
+}
+div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
+	background:#ffab00;
+	border: 2px solid #FFF;
+}
+.timeline-container .group-right .group-middle {
+	width: 20px;
+	height: 20px;
+	background: #F7F7F7;
+	display: block;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 38px;
+	border: 2px solid #ffab00;
+	border-radius: 50%;
+}
+.timeline-container .group-right .group-desc {
+	text-align:left;
+	border-left: 2px solid #ffab00;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	float: right;
+	width: 45%;
+	padding: 30px 25px;
+	position: relative;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/*Left Group*/
+.timeline-container .group-left span.group-date {
+	display: inline-block;
+	padding: 8px 16px;
+	float: right;
+	right: 30%;
+	top: 30px;
+	color: rgba(255, 255, 255, 0.5);
+	border-left: 2px solid #ffab00;
+	position: relative;
+	text-transform: uppercase;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+    margin-left: 40px;
+}
+
+.timeline-container .group-left span.group-date-fixed {
+	display: inline-block;
+	padding: 8px 16px;
+	float: right;
+	right: 33.55%;
+	top: 30px;
+	color: rgba(255, 255, 255, 0.5);
+	border-left: 2px solid #ffab00;
+	position: relative;
+	text-transform: uppercase;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+    margin-left: 40px;
+}
+.timeline-container .group-left .group-middle {
+	width: 20px;
+	height: 20px;
+	background: #F7F7F7;
+	display: block;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 38px;
+	border: 2px solid #ffab00;
+	border-radius:50%;
+}
+.timeline-container .group-left .group-desc {
+	text-align:right;
+	border-right: 2px solid #ffab00;
+	float: left;
+	width: 45%;
+	padding: 30px 25px;
+	position: relative;
+	color: rgba(255, 255, 255, 0.5);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+@media (max-width: 767px) {
+	.timeline-container span.group-date, .timeline-container div.group-desc{
+		background:#F7F7F7;
+	}
+	.timeline-container .group-item span.group-date {
+		text-align: center;
+		display: block;
+		float: none;
+		position: static;
+		border-bottom: 2px solid #ffab00;
+		border-right:0px;
+		border-left:0px;
+		border-radius:0;
+	}
+	.timeline-container .group-item div.group-desc {
+		text-align: center;
+		float: none;
+		width: 100%;
+		border-top: 2px solid #ffab00;
+		border-right:0px;
+		border-left:0px;
+		top: 20px;
+		margin-bottom: 30px;
+		border-radius:0;
+	}
+		.timeline-container .group-left .group-middle, .timeline-container .group-right .group-middle {
+		display:none;
+	}
+}
+@media (max-width: 991px) {
+	.timeline-container .group-right span.group-date{
+		left: 33%;
+	}
+	.timeline-container .group-left span.group-date{
+		right: 31%;
+	}
+}
 }
 
 .adhaniscuber-section-heading {
@@ -1004,6 +1242,7 @@ h6 {
 	}
 }
 // // Helper Class
+
 .col-xxs-12 {
 	@media screen and (max-width: 480px) {
 		float: none;
